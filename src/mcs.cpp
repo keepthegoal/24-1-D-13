@@ -251,7 +251,7 @@ const void MCS::saveToFile(std::string fileName) const
 	}
 	file.close();
 }
-
+#pragma GCC optimize("O1")
 MCS MCS::loadFromFile(std::string fileName)
 {
 	MCS resultMCS;
@@ -275,7 +275,7 @@ MCS MCS::loadFromFile(std::string fileName)
 	}
 	return resultMCS;
 }
-
+#pragma GCC optimize("O3")
 MCS::MCS()
 {
 	this->mcsForms = std::vector<Form>();
