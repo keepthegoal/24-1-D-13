@@ -6,13 +6,11 @@
 #include <map>
 #include <set>
 #include <chrono>
-#include "../include/gen_samples.h"
+#include "gen_samples.h"
+#include "utils.h"
 #include "../include/k_mismatch_search.h"
 #include "../include/mcs.h"
 #include "../include/type_defs.h"
-
-// Function declarations
-int safeStoi(const char* str, const std::string& paramName);
 
 void testSafeStoi() {
     std::cout << "Starting testSafeStoi()" << std::endl;
